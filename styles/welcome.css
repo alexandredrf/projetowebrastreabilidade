@@ -90,7 +90,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 20rem;
+        align-items: center;
         gap: 10rem;
     }
 
@@ -239,9 +239,9 @@
         gap:5rem; 
     }
 
-    main{
+    /* main{
         margin-top: 20rem;
-    }
+    } */
 
     .content{
 
@@ -295,9 +295,9 @@
         font-size: 1.8rem;   
     } 
 
-    main{
+    /* main{
         margin-top: 20rem;
-    }
+    } */
 
     .first {
         width: 40rem;
