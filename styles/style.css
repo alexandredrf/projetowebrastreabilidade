@@ -206,11 +206,11 @@
     }
 
 
-    .content{
+    /* .content{
 
         margin-top: 12rem;
 
-    }
+    } */
 }
 
 @media (max-width: 657px){
@@ -238,11 +238,11 @@
     }   
 
 
-    .content{
+    /* .content{
 
         margin-top: 10rem;
 
-    }
+    } */
 
     .login{
         height: 30rem;
