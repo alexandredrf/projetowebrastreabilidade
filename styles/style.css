@@ -198,9 +198,13 @@
 
 @media (max-width: 729px){
 
+    /* main{
+        margin-top: 20rem;
+    } */
     header{
         gap:5rem; 
     }
+
 
     .content{
 
@@ -232,6 +236,7 @@
     header h1{
         font-size: 1.8rem;   
     }   
+
 
     .content{
 
@@ -270,7 +275,7 @@
     }
 
     .login{
-        margin-top: 20rem;
+       
         height: 40rem;
         width: 22.5rem;
         padding: 2rem;
@@ -283,20 +288,5 @@
         width: 15rem;
         color: white;
         padding-left: 1rem;
-    }
-}
-
-/* Responsividade */
-
-@media (max-width: 729px){
-
-    header{
-        gap:5rem; 
-    }
-
-    .content{
-
-        margin-top: 12rem;
-
     }
 }
