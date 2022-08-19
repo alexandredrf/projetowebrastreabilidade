@@ -13,6 +13,7 @@
         --ff-secundary: 'Roboto', sans-serif;
     
         --primary-color: white;
+        --bg-rgba: rgba(216, 73, 87,0.7);
         --bg-header-color:rgb(216, 73, 87);
         --bg-color:rgb(250,254,255);
     }
@@ -46,7 +47,12 @@
     }
 
     header{
-        background-color: var(--bg-header-color);
+        background: var(--bg-rgba);
+        border: 1px solid var(--bg-color);
+        border-right: 1px solid var(--bg-rgba);
+        border-bottom: 1px solid var(--bg-rgba);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0,0,0,0.1);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -196,3 +202,114 @@
             transform: translateY(0px);
         }
     }
+
+    /* responsividade */
+
+    @media (max-width: 1240px){
+
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            width: 90rem;
+            align-items: center;
+    
+        }
+    
+        .first .search {
+            width: 30rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .first .search .agrupador {
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap:3rem;
+            
+        }
+    }
+@media (max-width: 921px){
+
+    header{
+        gap:5rem; 
+    }
+
+    .content{
+
+        margin-top: 12rem;
+
+    }
+
+    .first {
+        width: 60rem;
+
+    }
+
+    .first .clienteimg img {
+        max-width: 15rem;
+        max-height: 15rem;
+    }
+
+    .firt .search{
+        height: 25rem;
+    }
+
+    .first .search h2{
+        font-size: 1.6rem;
+    }
+
+    .first .search .agrupador {
+        font-size: 1.4rem;
+    }
+
+@media (max-width: 657px){
+
+
+    
+    header{
+        gap:1rem;
+        justify-content: left; 
+    }
+
+    .bglogo{
+        width: 20.4rem;
+        height: 8.5rem;
+        padding-top: 2rem;
+        
+    }
+
+    header .bglogo img {
+        width: 20.4rem;
+    }
+
+    header h1{
+        font-size: 1.8rem;   
+    } 
+
+    .first {
+        width: 40rem;
+
+    }
+
+    .first .clienteimg img {
+        max-width: 10rem;
+        max-height: 15rem;
+    }
+
+    .first .search button{
+
+        height: 4rem;
+        width: 15rem;
+        font-size: 1.6rem; 
+    }
+
+}
+
+
+
+}
