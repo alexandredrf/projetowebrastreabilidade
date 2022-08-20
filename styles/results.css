@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    :root{
+        font-size: 62.5%; /*10 pixel equivale a 1 rem */
+        /* cabeçalhos de variáveis para manutenção */
+        
+        --text-color: #303030;
+        --ff-primary: 'Poppins', sans-serif;
+        --ff-secundary: 'Roboto', sans-serif;
+    
+        --primary-color: white;
+        --bg-rgba: rgba(216, 73, 87,0.7);
+        --bg-header-color:rgb(216, 73, 87);
+        --bg-color:rgb(250,254,255);
+    }
+    
+    .sr-only{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden; 
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+
+    body{
+        font-family: var(--ff-primary);
+        font-size: 1.6rem;
+    }
+
+    #app{
+        max-width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        background-image: url(../img/background2.jpg);
+        background-repeat: no repeat;
+        background-size: cover;  
+        /* padding: 2rem; */     
+        
+    }
+
+    header{
+        background: var(--bg-rgba);
+        border: 1px solid var(--bg-color);
+        border-right: 1px solid var(--bg-rgba);
+        border-bottom: 1px solid var(--bg-rgba);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10rem;
+        height: 5.6rem;
+        
+    }
+
+    header h1{
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        
+    }
+
+    .bglogo{
+        width: 30rem;
+        height: 12.5rem;
+        background-color: white;
+        border-radius: 0rem 0rem 1.5rem 1.5rem;
+        padding-top: 4rem;
+        
+    }
+
+    header .bglogo img {
+        width: 30rem;
+        z-index: 1000;
+        border-radius: 0rem 0rem 1rem 1rem;
+    }
+
+
+    main{
+        height: 90%;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 6rem;
+        padding: 2rem;
+    }
+
+    .first {
+        display: flex;
+        justify-content: space-around;
+        width: 40rem;
+        align-items: center;
+        background-color: rgba(29, 40, 92, 0.8);
+        border-radius: 1.5rem;
+        box-shadow: 0 1rem 2rem -1rem rgba(0,0,0,0.3);
+        padding: 1rem;
+        animation: topdown 2000ms;
+
+    }
+
+    .first .clienteimg img {
+        max-width: 9rem;
+        max-height: 9rem;
+    }
+
+    .first .search {
+        height: 25rem;
+        width: 27rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .first .search h2{
+        color: var(--primary-color);
+        letter-spacing: 1px;
+    }
+
+    .first .search .agrupador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
+        justify-content: space-evenly;
+        width: 100%;
+        color: var(--primary-color);
+        
+    }
+
+    .agrupador select{
+        display: flex;
+        width: 20rem;
+        padding-left: 1rem;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    .agrupador input{
+        border-radius: 1rem;
+        padding: 1rem;
+        
+
+    }
+    .agrupador .codigo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first .search button{
+
+        height: 4rem;
+        width: 15rem;
+        background: #FF5374;
+        border-radius: 10px;
+        font-family: var(--ff-title);
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 400;
+        color: white;
+        border: none;
+        cursor:pointer;
+    }
+
+    .first .search button:hover {
+        background: var(--bg-header-color);
+        
+    }
+
+    .second{
+        display: flex;
+        border: #FF5374 solid 3px;
+        justify-content: space-between;
+        width: 70rem;
+        height: 45rem;
+    }
+
+    .second .pares{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: solid 5px black;
+    }
+    .op{
+        height: 20rem;
+        width: 27rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(29, 40, 92, 0.8);
+        border-radius: 1.5rem;
+        box-shadow: 0 1rem 2rem -1rem rgba(0,0,0,0.3);
+        padding: 2rem;
+        animation: topdown 2000ms;
+    }
+
+    .op {
+        border:solid 2px white;
+    }
+
+    .op .outronumero {
+        border:solid 2px red;
+    }
+
+    .op .outronumero .percentage{
+        border:solid 2px pink;
+    }
+
+    /* animaçao */
+
+    @keyframes topdown {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    /* responsividade */
+
+    @media (max-width: 1240px){
+
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            width: 90rem;
+            align-items: center;
+    
+        }
+    
+        .first .search {
+            width: 30rem;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .first .search .agrupador {
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap:3rem;
+            
+        }
+    }
+@media (max-width: 921px){
+
+    header{
+        gap:5rem; 
+    }
+
+    /* main{
+        margin-top: 20rem;
+    } */
+
+    .content{
+
+        margin-top: 12rem;
+
+    }
+
+    .first {
+        width: 60rem;
+
+    }
+
+    .first .clienteimg img {
+        max-width: 15rem;
+        max-height: 15rem;
+    }
+
+    .firt .search{
+        height: 25rem;
+    }
+
+    .first .search h2{
+        font-size: 1.6rem;
+    }
+
+    .first .search .agrupador {
+        font-size: 1.4rem;
+    }
+
+@media (max-width: 657px){
+
+
+    
+    header{
+        gap:1rem;
+        justify-content: left; 
+    }
+
+    .bglogo{
+        width: 20.4rem;
+        height: 8.5rem;
+        padding-top: 2rem;
+        
+    }
+
+    header .bglogo img {
+        width: 20.4rem;
+    }
+
+    header h1{
+        font-size: 1.8rem;   
+    } 
+
+    /* main{
+        margin-top: 20rem;
+    } */
+
+    .first {
+        width: 40rem;
+
+    }
+
+    .first .clienteimg img {
+        max-width: 10rem;
+        max-height: 15rem;
+    }
+
+    .first .search button{
+
+        height: 4rem;
+        width: 15rem;
+        font-size: 1.6rem; 
+    }
+
+}
+
+
+
+}
