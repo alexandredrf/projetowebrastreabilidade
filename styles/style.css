@@ -40,7 +40,7 @@
         border: 1px solid var(--bg-color);
         border-right: 1px solid var(--bg-rgba);
         border-bottom: 1px solid var(--bg-rgba);
-        backdrop-filter: blur(5px);
+        /* backdrop-filter: blur(5px); */
         box-shadow: 0 25px 45px rgba(0,0,0,0.1);
         display: flex;
         justify-content: center;
@@ -148,10 +148,10 @@
 
         height: 4rem;
         width: 15rem;
-        background: #FF5374;
+        background: var(--bg-header-color);
         border-radius: 10px;
         font-family: var(--ff-title);
-        font-size: 20px;
+        font-size: 18px;
         line-height: 26px;
         font-weight: 400;
         color: white;
@@ -160,7 +160,7 @@
     }
 
     .content button:hover {
-        background: var(--bg-header-color);
+        background: #FF5374;
         
     }
 
