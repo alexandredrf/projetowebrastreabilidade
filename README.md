@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/jOEhZlp.gif">
+<img src="https://i.imgur.com/QMfznHU.png">
 
 
 # Rastreabilidade
