@@ -13,12 +13,10 @@
         --ff-secundary: 'Roboto', sans-serif;
     
         --primary-color: white;
-        /* --bg-rgba: rgba(91, 119, 80,0.7);
-        --bg-header-color:rgb(91, 119, 80); */
-        --bg-rgba: rgba(167, 176, 111,0.8);
-        --bg-header-color:rgb(167, 176, 111);
-        /* --bg-rgba: rgba(216, 73, 87,0.7);
-        --bg-header-color:rgb(216, 73, 87); */
+        /* --bg-rgba: rgba(167, 176, 111,0.8);
+        --bg-header-color:rgb(167, 176, 111); */
+        --bg-rgba:#C31626;
+        --bg-header-color:#C31626;
         --bg-color:rgb(250,254,255);
     }
     
@@ -31,7 +29,7 @@
         max-width: 100%;
         height: 100vh;
         margin: 0 auto;
-        background-image: url(../img/rebanho\ verde.jpg);
+        background-image: url(../img/background.jpg);
         background-repeat: no repeat;
         background-size: cover;
         align-items: center;

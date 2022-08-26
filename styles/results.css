@@ -13,8 +13,10 @@
         --ff-secundary: 'Roboto', sans-serif;
     
         --primary-color: white;
-        --bg-rgba: rgba(216, 73, 87,0.7);
-        --bg-header-color:rgb(216, 73, 87);
+        /* --bg-rgba: rgba(167, 176, 111,0.8);
+        --bg-header-color:rgb(167, 176, 111); */
+        --bg-rgba:#C31626;
+        --bg-header-color:#C31626;
         --bg-color:rgb(250,254,255);
     }
     
