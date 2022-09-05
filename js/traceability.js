@@ -1,7 +1,13 @@
 //FAZENDO A INTEGRAÇÃO COM A API
 // Passando "invoice" como parâmetro para que seja pesquisado as infos sobre o pokemon
 
-const palletnumber = document.querySelector('.palletnumber span')
+const palletNumber = document.querySelector('.palletnumber span')
+const supplierName = document.querySelector('.percentage').getElementsByTagName('p')[0]
+const lotNumber = document.querySelector('.percentage').getElementsByTagName('p')[1]
+const percentage = document.querySelector('.percentage').getElementsByTagName('p')[2]
+const imgLogo = document.querySelector('.clienteimg img')
+
+const palletNumber2 = document.getElementsByClassName('palletnumber')[1].querySelector('span')
 
 const fetchItem = async (invoice) => {
 
@@ -20,9 +26,26 @@ const fetchItem = async (invoice) => {
 const renderData = async (id) => {
 
     const data = await fetchItem(id)
-    
+    palletNumber.innerHTML = `Pallet number: ${data.name}`
+    supplierName.innerHTML = `Supplier: ${data.status}`
+    lotNumber.innerHTML = `Lot number: ${data.id}`
+    percentage.innerHTML = `Percentage: ${data.gender}`
+    imgLogo.src = data.image
     console.log(data.image)
     }
 
-renderData(`1`)
+renderData(`183`)
+
+const renderData2 = async (id) => {
+
+    const data = await fetchItem(id)
+    palletNumber2.innerHTML = `Pallet number: ${data.name}`
+    supplierName.innerHTML = `Supplier: ${data.status}`
+    lotNumber.innerHTML = `Lot number: ${data.id}`
+    percentage.innerHTML = `Percentage: ${data.gender}`
+    imgLogo.src = data.image
+    console.log(data.image)
+    }
+
+renderData2(`182`)
 
