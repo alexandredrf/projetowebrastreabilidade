@@ -1,14 +1,3 @@
-// link no logo
-const logoButton = document.querySelector('.bglogo img')
-
-logoButton.addEventListener('click',function(){
-
-    console.log("O botão funcionou")
-    window.location.href = './index.html'
-
-}) 
-
-
 //FAZENDO A INTEGRAÇÃO COM A API
 // Passando "invoice" como parâmetro para que seja pesquisado as infos sobre o pokemon
 
@@ -23,8 +12,8 @@ const palletNumber2 = document.getElementsByClassName('palletnumber')[1].querySe
 const fetchItem = async (invoice) => {
 
     // aqui vai o endpoint
-    const APIResponse = await fetch(`http://10.1.1.148:8080/server/application/api/traceability/invoice?invoiceKey=${invoice}`);
-    //const APIResponse = await fetch(`https://rickandmortyapi.com/api/character/${invoice}`)
+    // const APIResponse = await fetch(`http://10.1.1.148/:8080/server/application/api/traceability/invoice?invoiceKey=${invoice}`);
+    const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${invoice}`)
     // Tratando
     // Se o invoice for ok, o status da resposta é 200. Então, ele é válido
     // if(APIResponse.status ===200){
@@ -37,15 +26,15 @@ const fetchItem = async (invoice) => {
 const renderData = async (id) => {
 
     const data = await fetchItem(id)
-    palletNumber.innerHTML = `Pallet number: ${data[0].productionOrderNumber}`
-    supplierName.innerHTML = `Supplier: ${data[0].supplierName}`
-    lotNumber.innerHTML = `Lot number: ${data[0].lotNumber}`
-    percentage.innerHTML = `Percentage: ${data[0].percentage}`
-    // imgLogo.src = data.image
+    palletNumber.innerHTML = `Nome do Pokemon: ${data.name}`
+    supplierName.innerHTML = `Supplier: ${data.supplierName}`
+    lotNumber.innerHTML = `Lot number: ${data.lotNumber}`
+    percentage.innerHTML = `Percentage: ${data.percentage}`
+    imgLogo.src = data.sprites.other[2].official-artwork.front_default
     // console.log(data.image)
     }
 
-renderData(`43220492632512000199550020000440561001165078`)
+renderData(`7`)
 
 // const renderData2 = async (id) => {
 
@@ -59,16 +48,4 @@ renderData(`43220492632512000199550020000440561001165078`)
 //     }
 
 // renderData2(`182`)
-// palletNumber.innerHTML = 
-// `<div class="palletnumber">
-//     <span>Pallet number: ${data[0].productionOrderNumber}</span>
-//     <div class="container">
-//     <div class="percentage">
-//     <div class="ans"><img src="./img/leather.png" alt="supply"><p></p></div>
-//     <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p></p></div>
-//     <div class="ans"><img src="./img/percentage.png" alt="supply"><p></p></div>
-//     <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
-//     </div>
-//     <!-- <img src="./img/anexoicon2.png" alt="ícone anexo"> -->
-//     </div>
-// </div>`
+

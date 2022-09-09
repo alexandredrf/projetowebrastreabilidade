@@ -15,6 +15,7 @@
     <!--  -->
     <!-- <script src="js/main.js" type="module" defer></script> -->
     <link rel="shortcut icon" href="./img/ícone.png" type="image/x-icon">
+    <script src="js/traceability.js" defer></script>
 </head>
 <body>
     <div id="app">
@@ -22,103 +23,106 @@
             <div class="bglogo">
                  <img src="./img/logo3.png" alt="antara logo">
             </div>
-            <h1>Traceability</h1> 
+            <h1>Traceability</h1>
+            <div class="search">
+                 <div class="agrupador">
+                    <h2>Make a new search</h2>
+                    <div class="select">
+                        <label class= "sr-only" for="event-category">Category</span></label>
+                        <select id="event-category" >
+                        <option value="" disabled selected>Choose category</option>
+                        <option value="option1">opção 1</option>
+                        <option value="option2">opção 2</option>
+                        <option value="option3">opção 3</option>
+                        </select>
+                    </div>
+                    <div class="codigo">
+                        <label class="sr-only labelwidth" for="input-user">Code</label>
+                        <input id="input-user" type="text" placeholder="Enter the code">
+                    </div>
+                    <button>Search</button>
+                </div>
+            </div>
         </header>
         <main>
-            <section class ="first">
-                <div class="relative">
-                    <!-- <div class="clienteimg">
-                        <img src="https://www.systemhaus.com.br/site/visual/img/logo-rodape.png?v=2_1" alt="logo cliente">
-                    </div> -->
-                        <div class="search">
-                            <h2>Make a new search</h2>
-                            <!-- <div class="agrupador"> -->
-                                <div class="select">
-                                    <label class= "sr-only" for="event-category">Category</span></label>
-                                    <select id="event-category" >
-                                    <option value="" disabled selected>Choose category</option>
-                                    <option value="option1">opção 1</option>
-                                    <option value="option2">opção 2</option>
-                                    <option value="option3">opção 3</option>
-                                    </select>
-                                </div>
-                                <div class="codigo">
-                                    <label class="sr-only labelwidth" for="input-user">Code</label>
-                                    <input id="input-user" type="text" placeholder="Enter the code">
-                                </div>
-                            <!-- </div> -->
-                            <button>Search</button>
-                        </div>
+            <section class = "first">
+
+                <div class="viewing">
+                    <div class="clienteimg">
+                        <img src="./img/traceabilitylogo.png" alt="logo cliente">
                     </div>
+                    <p>You are viewing the result of:</p>
+                    <h4>invoice 31109</h4>
+                </div>
             </section>
             <section class = "second">
                 <section class="pares">
-                    <section class = "op">
-                            <span>Production order: 15484574</span>
+                    <!-- <section class = "op">
+                            <span>Production order: 15484574</span> -->
+                            <div class="palletnumber">
+                                <span></span>
+                                <div class="container">
+                                    <div class="percentage">
+                                        <div class="ans"><img src="./img/leather.png" alt="supply"><p></p></div>
+                                        <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p></p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p></p></div>
+                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                    </div>
+                                                                            <!-- <img src="./img/anexoicon2.png" alt="ícone anexo"> -->
+                                </div>
+                            </div>
                             <div class="palletnumber">
                                 <span>Pallet number: 9889</span>
-                                <div class="percentage">
-                                    <p>Fornecedor: Renan</p>
-                                    <p>Nº do lote: 4575</p>
-                                    <p>percentage: 60%</p>
-                                </div>
-                                <div class="percentage">
-                                    <span>Fornecedor: Renan</span>
-                                    <span>Nº do lote: 4575</span>
-                                    <span>percentage: 60%</span>
-                                </div>
-                                <div class="percentage">
-                                    <span>Fornecedor: Renan</span>
-                                    <span>Nº do lote: 4575</span>
-                                    <span>percentage: 60%</span>
-                                </div>
-                                <div class="percentage">
-                                    <span>Fornecedor: Renan</span>
-                                    <span>Nº do lote: 4575</span>
-                                    <span>percentage: 60%</span>
-                                </div>
+                                <div class="container">
+                                    <div class="percentage">
+                                        <div class="ans"><img src="./img/leather.png" alt="supply"><p>Supplier: DURLICOUROS</p></div>
+                                        <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p></div>
+                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                    </div>
+                                    <div class="percentage">
+                                        <div class="ans"><img src="./img/leather.png" alt="Supply"><p>supplier: DURLICOUROS</p></div>
+                                        <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 20%</p></div>
+                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                    </div>
+                                    <div class="percentage">
+                                        <div class="ans"><img src="./img/leather.png" alt="Supply"><p>supplier: DURLICOUROS</p></div>
+                                        <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 20%</p></div>
+                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                    </div>
+                                                                            <!-- <img src="./img/anexoicon2.png" alt="ícone anexo"> -->
+                                    </div>
                             </div>
-                    </section>
-                    <!-- <section class = "op">
-                            <h3>Production order:</h3>
-                            <p class="valueop">Valor OP</p>
-                            <div class="outronumero">
-                                <h4>Outro número:</h4>
-                                <p class="valueoutronumero">valor outro número</p>
-                                <div class="percentage">
-                                    <h4>percentage:</h4>
-                                    <p class="valuepercentage">valor da %</p>
-                                </div>
+                            <div class="palletnumber">
+                                <span>Pallet number: 9889</span>
+                                <div class="container">
+                                    <div class="percentage">
+                                        <div class="ans"><img src="./img/leather.png" alt="supply"><p>Supplier: DURLICOUROS</p></div>
+                                        <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p></div>
+                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                    </div>
+                                    <div class="percentage">
+                                        <div class="ans"><img src="./img/leather.png" alt="Supply"><p>supplier: DURLICOUROS</p></div>
+                                        <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 20%</p></div>
+                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                    </div>
+                                    <div class="percentage">
+                                        <div class="ans"><img src="./img/leather.png" alt="Supply"><p>supplier: DURLICOUROS</p></div>
+                                        <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 20%</p></div>
+                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                    </div>
+                                                                            <!-- <img src="./img/anexoicon2.png" alt="ícone anexo"> -->
+                                    </div>
                             </div>
-                    </section>
+                            
+            
                 </section>
-                <section class="pares">
-                    <section class = "op">
-                        <h3>Production order:</h3>
-                        <p class="valueop">Valor OP</p>
-                        <div class="outronumero">
-                            <h4>Outro número:</h4>
-                            <p class="valueoutronumero">valor outro número</p>
-                            <div class="percentage">
-                                <h4>percentage:</h4>
-                                <p class="valuepercentage">valor da %</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class = "op">
-                        <h3>Production order:</h3>
-                        <p class="valueop">Valor OP</p>
-                        <div class="outronumero">
-                            <h4>Outro número:</h4>
-                            <p class="valueoutronumero">valor outro número</p>
-                            <div class="percentage">
-                                <h4>percentage:</h4>
-                                <p class="valuepercentage">valor da %</p>
-                            </div>
-                        </div>
-                    </section>
-                </section> -->
-            </section>
+               
         </main>
     </div>
 </body>

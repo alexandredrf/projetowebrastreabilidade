@@ -15,7 +15,7 @@
         --primary-color: white;
         /* --bg-rgba: rgba(167, 176, 111,0.8);
         --bg-header-color:rgb(167, 176, 111); */
-        --bg-rgba:#C31626;
+        --bg-rgba:rgba(45, 54, 98,0.8);
         --bg-header-color:#C31626;
         --bg-color:rgb(250,254,255);
     }
@@ -66,6 +66,7 @@
         background-color: white;
         border-radius: 0rem 0rem 1.5rem 1.5rem;
         padding-top: 4rem;
+        cursor:pointer;
         
     }
 
@@ -73,6 +74,7 @@
         width: 30rem;
         z-index: 1000;
         border-radius: 0rem 0rem 1rem 1rem;
+        
     }
 
 
@@ -162,8 +164,8 @@
     }
 
     .content button:hover {
-        /* background: #FF5374; */
-        background: #5b7750;
+        background: #FF5374;
+        /* background: #5b7750; */
         
     }
 
