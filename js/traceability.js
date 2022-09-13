@@ -8,6 +8,14 @@ logoButton.addEventListener('click',function(){
 
 }) 
 
+const newSearch = document.querySelector('header button')
+
+newSearch.addEventListener('click',function(){
+
+    console.log("O botão funcionou")
+    window.location.href = './results.html'
+
+}) 
 
 //FAZENDO A INTEGRAÇÃO COM A API
 // Passando "invoice" como parâmetro para que seja pesquisado as infos sobre o pokemon
