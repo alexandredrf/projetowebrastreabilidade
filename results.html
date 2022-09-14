@@ -15,7 +15,7 @@
     <!--  -->
     <!-- <script src="js/main.js" type="module" defer></script> -->
     <link rel="shortcut icon" href="./img/ícone.png" type="image/x-icon">
-    <script src="js/traceability.js" defer></script>
+    <script src="./js/traceability.js" defer type="module"></script>
 </head>
 <body>
     <div id="app">
@@ -31,9 +31,9 @@
                         <label class= "sr-only" for="event-category">Category</span></label>
                         <select id="event-category" >
                         <option value="" disabled selected>Choose category</option>
-                        <option value="option1">Invoice ID</option>
-                        <option value="option2">Lether ID</option>
-                        <option value="option3">Volume ID</option>
+                        <option value="Invoice ID">Invoice ID</option>
+                        <option value="Lether ID">Lether ID</option>
+                        <option value="Volume ID">Volume ID</option>
                         </select>
                     </div>
                     <div class="codigo">
@@ -64,49 +64,155 @@
                                 <div class="container">
                                     <div class="percentage">
                                         <div class="ans"><img src="./img/leather.png" alt="supply"><p>Supplier: DURLICOUROS</p></div>
+                                        <div id = "farm" class="ans"><img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha</p></div>
+                                        <div id = "container-farm" class="container-farm">
+                                            <div class="percentage-farm">
+                                                <button class = "close">x</button>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
                                         <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p></div>
-                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                        <div class="ans"><img href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" src="./img/anexoicon.png" class ="download" alt="supply"><a class="ans" href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" target="_blank" rel="noopener noreferrer" >Download files</a></div>
                                     </div>
                                     <div class="percentage">
-                                        <div class="ans"><img src="./img/leather.png" alt="Supply"><p>supplier: DURLICOUROS</p></div>
+                                        <div class="ans"><img src="./img/leather.png" alt="supply"><p>Supplier: DURLICOUROS</p></div>
+                                        <div id = "farm" class="ans"><img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha</p></div>
+                                        <div id = "container-farm" class="container-farm">
+                                            <div class="percentage-farm">
+                                                <button class = "close">x</button>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
-                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 20%</p></div>
-                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p></div>
+                                        <div class="ans"><img href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" src="./img/anexoicon.png" class ="download" alt="supply"><a class="ans" href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" target="_blank" rel="noopener noreferrer" >Download files</a></div>
                                     </div>
-                                    <div class="percentage">
-                                        <div class="ans"><img src="./img/leather.png" alt="Supply"><p>supplier: DURLICOUROS</p></div>
-                                        <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
-                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 20%</p></div>
-                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
-                                    </div>
-                                                                            <!-- <img src="./img/anexoicon2.png" alt="ícone anexo"> -->
-                                    </div>
+
+                                </div>
                             </div>
+
                             <div class="palletnumber">
-                                <span>Pallet number: 9890</span>
+                                <span>Pallet number: 9889</span>
                                 <div class="container">
                                     <div class="percentage">
                                         <div class="ans"><img src="./img/leather.png" alt="supply"><p>Supplier: DURLICOUROS</p></div>
+                                        <div id = "farm" class="ans"><img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha</p></div>
+                                        <div id = "container-farm" class="container-farm">
+                                            <div class="percentage-farm">
+                                                <button class = "close">x</button>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
-                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 70%</p></div>
-                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p></div>
+                                        <div class="ans"><img href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" src="./img/anexoicon.png" class ="download" alt="supply"><a class="ans" href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" target="_blank" rel="noopener noreferrer" >Download files</a></div>
                                     </div>
                                     <div class="percentage">
-                                        <div class="ans"><img src="./img/leather.png" alt="Supply"><p>supplier: DURLICOUROS</p></div>
+                                        <div class="ans"><img src="./img/leather.png" alt="supply"><p>Supplier: DURLICOUROS</p></div>
+                                        <div id = "farm" class="ans"><img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha</p></div>
+                                        <div id = "container-farm" class="container-farm">
+                                            <div class="percentage-farm">
+                                                <button class = "close">x</button>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
-                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 15%</p></div>
-                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p></div>
+                                        <div class="ans"><img href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" src="./img/anexoicon.png" class ="download" alt="supply"><a class="ans" href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" target="_blank" rel="noopener noreferrer" >Download files</a></div>
                                     </div>
                                     <div class="percentage">
-                                        <div class="ans"><img src="./img/leather.png" alt="Supply"><p>supplier: DURLICOUROS</p></div>
+                                        <div class="ans"><img src="./img/leather.png" alt="supply"><p>Supplier: DURLICOUROS</p></div>
+                                        <div id = "farm" class="ans"><img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha</p></div>
+                                        <div id = "container-farm" class="container-farm">
+                                            <div class="percentage-farm">
+                                                <button class = "close">x</button>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                                <div class="ans">
+                                                    <img src="./img/farm.png" alt="supply"><p>Farm: Fazendinha do alexandre</p>
+                                                    <img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p>Lot number: 26</p></div>
-                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 15%</p></div>
-                                        <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
+                                        <div class="ans"><img src="./img/percentage.png" alt="supply"><p>Percentage: 60%</p></div>
+                                        <div class="ans"><img href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" src="./img/anexoicon.png" class ="download" alt="supply"><a class="ans" href="https://ergasis.files.wordpress.com/2021/06/audit-7.0.pdf" target="_blank" rel="noopener noreferrer" >Download files</a></div>
                                     </div>
-                                                                            <!-- <img src="./img/anexoicon2.png" alt="ícone anexo"> -->
-                                    </div>
+
+                                </div>
                             </div>
+
                             
             
                 </section>

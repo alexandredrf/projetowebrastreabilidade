@@ -298,7 +298,7 @@
     .second .palletnumber .percentage .download {
         width: 4rem;
         height: 4rem;
-        cursor:pointer;
+        /* cursor:pointer; */
         /* background-color: white;
         border-radius: 50%; */
         
@@ -312,6 +312,15 @@
         width: 100%;
     }
 
+    .second .palletnumber .percentage .ans a{
+
+        text-decoration: none;
+        color:white;
+    }
+
+    .second .palletnumber .percentage .ans a:visited {
+        color:white;
+    }
 
     .second .palletnumber .percentage img{
         width: 4rem;
@@ -323,8 +332,70 @@
     }
 
 
+    .container-farm{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top:0px;
+        left:0px;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2000;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+    }
+
+    .container-farm.show{
+        display: flex;
+        animation: topdown 2000ms;
+    }
+
+   .percentage-farm {
+        background-color: var(--bg-retangule-color);
+        min-width: 40vw;
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5rem;
+        border-radius: 0rem 3rem 0rem 3rem;
+        border: white 0.3rem solid;
+        position: relative;
+        gap:2rem;
+        
+    }
+    .percentage-farm .ans{
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* border: #FF5374 solid 1rem; */
+        /* flex-direction: column; */
+
+
+    }
+    .close{
+        position: absolute;
+        top: -20px; right: -20px;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 0.5rem solid white;
+        color: rgba(29, 40, 92);
+        font-size: larger;
+        cursor: pointer;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.3);
+
+    }
+
 
     /* animaçao */
+
+    /* animação pop-up */
+
+
 
     @keyframes topdown {
         0% {

@@ -1,21 +1,45 @@
-// link no logo
-const logoButton = document.querySelector('.bglogo img')
+import { logoButton,
+    navigateToHome,
+    navigateToResults,
+    newSearch,
+    farm} from './utils.js'
 
 logoButton.addEventListener('click',function(){
-
-    console.log("O botão funcionou")
-    window.location.href = './index.html'
-
+   navigateToHome()
 }) 
 
-const newSearch = document.querySelector('header button')
+
+const h4 = document.querySelector('h4')
 
 newSearch.addEventListener('click',function(){
-
-    console.log("O botão funcionou")
-    window.location.href = './results.html'
-
+    const valor = document.querySelector('input').value
+    const option = document.querySelector('#event-category').value
+    console.log(valor)
+    h4.innerHTML = `${option} ${valor}`
+    renderData(valor)
 }) 
+
+//------------------------------------popup
+
+function iniciaModal(modalID){
+    const modal = document.getElementById(modalID)
+    if(modal){
+    modal.classList.add('show');
+    modal.addEventListener('click', (e) => {
+        if(e.target.id == modalID || e.target.className == 'close') {
+            modal.classList.remove('show')
+        }
+    });
+   }   
+}
+for( let i=0 ; i<farm.length; i++){
+farm[i].addEventListener('click',function(){
+    iniciaModal('container-farm')
+    })
+}
+//------------------------------------popup
+
+
 
 //FAZENDO A INTEGRAÇÃO COM A API
 // Passando "invoice" como parâmetro para que seja pesquisado as infos sobre o pokemon
@@ -24,9 +48,7 @@ const palletNumber = document.querySelector('.palletnumber span')
 const supplierName = document.querySelector('.percentage').getElementsByTagName('p')[0]
 const lotNumber = document.querySelector('.percentage').getElementsByTagName('p')[1]
 const percentage = document.querySelector('.percentage').getElementsByTagName('p')[2]
-const imgLogo = document.querySelector('.clienteimg img')
 
-const palletNumber2 = document.getElementsByClassName('palletnumber')[1].querySelector('span')
 
 const fetchItem = async (invoice) => {
 
@@ -35,11 +57,12 @@ const fetchItem = async (invoice) => {
     //const APIResponse = await fetch(`https://rickandmortyapi.com/api/character/${invoice}`)
     // Tratando
     // Se o invoice for ok, o status da resposta é 200. Então, ele é válido
-    // if(APIResponse.status ===200){
-    //     // Atribuindo em data os dados extraidos da api só que transformados em jso
-    // }
-    const data = await APIResponse.json();
-    return data
+    if(APIResponse.status === 200){
+        const data = await APIResponse.json();
+        return data
+        // Atribuindo em data os dados extraidos da api só que transformados em jso
+    } else console.log(APIResponse.status)
+
 }
 
 const renderData = async (id) => {
@@ -49,34 +72,9 @@ const renderData = async (id) => {
     supplierName.innerHTML = `Supplier: ${data[0].supplierName}`
     lotNumber.innerHTML = `Lot number: ${data[0].lotNumber}`
     percentage.innerHTML = `Percentage: ${data[0].percentage}`
-    // imgLogo.src = data.image
-    // console.log(data.image)
+
     }
 
 renderData(`43220492632512000199550020000440561001165078`)
 
-// const renderData2 = async (id) => {
 
-//     const data = await fetchItem(id)
-//     palletNumber2.innerHTML = `Pallet number: ${data.name}`
-//     supplierName.innerHTML = `Supplier: ${data.status}`
-//     lotNumber.innerHTML = `Lot number: ${data.id}`
-//     percentage.innerHTML = `Percentage: ${data.gender}`
-//     imgLogo.src = data.image
-//     console.log(data.image)
-//     }
-
-// renderData2(`182`)
-// palletNumber.innerHTML = 
-// `<div class="palletnumber">
-//     <span>Pallet number: ${data[0].productionOrderNumber}</span>
-//     <div class="container">
-//     <div class="percentage">
-//     <div class="ans"><img src="./img/leather.png" alt="supply"><p></p></div>
-//     <div class="ans"><img src="./img/binary-code2.png" alt="supply"><p></p></div>
-//     <div class="ans"><img src="./img/percentage.png" alt="supply"><p></p></div>
-//     <div class="ans"><img src="./img/anexoicon.png" class ="download" alt="supply"><p>Download files</p></div>
-//     </div>
-//     <!-- <img src="./img/anexoicon2.png" alt="ícone anexo"> -->
-//     </div>
-// </div>`
