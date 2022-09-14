@@ -13,11 +13,16 @@
         --ff-secundary: 'Roboto', sans-serif;
     
         --primary-color: white;
-        --bg-rgba: rgba(167, 176, 11,0.6);
-        --bg-header-color:rgba(167, 176, 11,0.6);
+        /* --bg-rgba: rgba(60, 214, 60, 0.7);
+        --bg-header-color:rgba(60, 214, 60, 0.7);
+        --bg-retangule-color: rgba(29, 40, 92, 0.9); */
         /* --bg-rgba:rgba(45, 54, 98,0.8);
         --bg-header-color:#C31626; */
         --bg-color:rgb(250,254,255);
+        --bg-rgba: rgba(29, 40, 92, 0.9);
+        --bg-header-color:rgba(60, 214, 60, 0.7);
+        --bg-retangule-color: rgba(29, 40, 92, 0.9);
+
     }
     
     .sr-only{
@@ -100,11 +105,10 @@
     .first {
         display: flex;
         justify-content: space-around;
-        width: 70vw;
-        height: 40vh;
+        width: 65vw;
+        height: 50vh;
         align-items: center;
-        /* background-color: rgba(84, 204, 37, 0.616); */
-        background-color: rgba(29, 40, 92, 0.8);
+        background-color: var(--bg-retangule-color);
         border-radius: 1.5rem;
         box-shadow: 0 1rem 2rem -1rem rgba(0,0,0,0.3);
         padding: 2rem;
@@ -115,7 +119,7 @@
     .first .clienteimg img {
         max-width: 30vw;
         max-height: 30vh;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.3);
         border-radius: 1.5rem;
         padding: 2rem;
     }
