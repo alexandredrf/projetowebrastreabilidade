@@ -1,28 +1,23 @@
 {
-  "name": "ecoleta",
+  "name": "RastreabilidadeWEB",
   "version": "1.0.0",
-  "description": "Treinamento dev week",
-  "main": "src/server.js",
+  "description": "Rastreabilidade curtumes",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandredrf/Ecoleta.git"
+    "url": "git+https://github.com/alexandredrf/projetowebrastreabilidade"
   },
   "keywords": [],
   "author": "Participante Alexandre Davi Rocha Fernandes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexandredrf/Ecoleta/issues"
+    "url": "https://github.com/alexandredrf/projetowebrastreabilidade"
   },
-  "homepage": "https://github.com/alexandredrf/Ecoleta#readme",
+  "homepage": "https://github.com/alexandredrf/projetowebrastreabilidade",
   "dependencies": {
-    "express": "^4.17.1",
-    "nunjucks": "^3.2.1",
-    "sqlite3": "^4.2.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
+    "node-static": "^0.7.11"
   }
 }
