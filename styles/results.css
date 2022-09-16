@@ -298,10 +298,15 @@
     .second .palletnumber .percentage .download {
         width: 4rem;
         height: 4rem;
+
         /* cursor:pointer; */
         /* background-color: white;
         border-radius: 50%; */
         
+    }
+
+    .second .palletnumber .percentage a:hover {
+        transform: scale(1.1);
     }
 
     .second .palletnumber .percentage .ans{
@@ -331,7 +336,10 @@
         
     }
 
-
+    #farm p:hover{
+        transform: scale(1.1);
+        cursor:pointer;
+    }
     .container-farm{
         width: 100vw;
         height: 100vh;
@@ -358,7 +366,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 5rem;
         border-radius: 0rem 3rem 0rem 3rem;
         border: white 0.3rem solid;
